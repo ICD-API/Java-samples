@@ -80,6 +80,7 @@ public class ICDAPIclient {
 		con.setRequestProperty("Authorization", "Bearer "+token);
 		con.setRequestProperty("Accept", "application/json");
 		con.setRequestProperty("Accept-Language", "en");
+		con.setRequestProperty("API-Version", "v2");
 
 		// response
 		int responseCode = con.getResponseCode();
